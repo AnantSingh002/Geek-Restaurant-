@@ -1,37 +1,84 @@
+/* Container */
+div {
+  /* max-width: 1000px; */
+  /* margin: 2rem auto; */
+  /* padding: 1rem; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-.quoteContainer {
-    padding-top: 10vh;
-    /* padding: 2rem; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    background-color: #f5f5f5;
-  }
-  
-  .quoteCard {
-    background-color: #1c2833; /* dark navy/charcoal */
-    border-radius: 10px;
-    padding: 2rem;
-    width: 90%;
-    /* max-width: 900px; */
-    color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-    margin-bottom: 80px;
-  }
-  
-  .quoteText {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 1.2rem;
-    /* line-height: 1.6; */
-  }
-  
-  .quoteAuthor {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #b0b8c1; /* subtle grayish text */
-  }
-  
+/* Title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Search Bar */
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #24734a;
+}
+
+/* Restaurant Cards */
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  /* margin-top: 2rem; */
+}
+
+li {
+  /* background-color: #fdfdfd; */
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #2e2e2e;
+}
+
+p {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
